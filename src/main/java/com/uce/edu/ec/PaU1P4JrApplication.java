@@ -1,5 +1,7 @@
 package com.uce.edu.ec;
 
+import java.time.LocalDateTime;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,11 +15,13 @@ public class PaU1P4JrApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Mi primer proyecto");
-		/*
-		 * Spring framework es un permite la construccion/desarrollo
-		 * de aplicaciones basadas en Spring
-		 */
+		Profesor profesor= new Profesor();
+		profesor.setNombre("John");
+		profesor.setCedula("1700");
+		profesor.setFechaNacimiento(LocalDateTime.now());
+		profesor.setApellido("Ramos");
+		
+		System.out.println(profesor);
 	}
 
 }
