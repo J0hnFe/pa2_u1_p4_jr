@@ -16,10 +16,10 @@ public class PaU1P4JrApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		Profesor profesor= new Profesor();
-		profesor.setNombre("John");
-		profesor.setCedula("1700");
+		profesor.setNombre("Peter");
+		profesor.setCedula("1450");
 		profesor.setFechaNacimiento(LocalDateTime.now());
-		profesor.setApellido("Ramos");
+		profesor.setApellido("Yuyer");
 		
 		System.out.println(profesor);
 	}
